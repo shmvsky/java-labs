@@ -6,6 +6,8 @@ import interfaces.DaewooMatiz;
 import log.LoggingDemo;
 import nestedClasses.A;
 
+import java.io.IOException;
+
 /**
  * Лабораторная #1
  * 1. Интерфейсы
@@ -16,7 +18,7 @@ import nestedClasses.A;
  */
 public class JavaLabs {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         //1
         Car deawoo = new DaewooMatiz();
@@ -32,6 +34,10 @@ public class JavaLabs {
         c.foo(42);
 
         //3
+        ExceptionsDemo.bar();
+        ExceptionsDemo.readerExample1("exceptions/test.txt");
+        ExceptionsDemo.readerExample2("exceptions/test.txt");
+        ExceptionsDemo.readerExample3("exceptions/test.txt");
         ExceptionsDemo.uncheckedExceptionExample();
 
         //4

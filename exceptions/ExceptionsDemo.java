@@ -5,7 +5,7 @@ import java.io.*;
 public class ExceptionsDemo {
 
 
-    public static void foo() throws Exception {
+    private static void foo() throws Exception {
         throw new Exception("WTF...");
     }
 
@@ -19,7 +19,7 @@ public class ExceptionsDemo {
         }
     }
 
-    public static void buz() {
+    private static void buz() {
         System.out.println("Освобождаем ресурсы или что-нибудь еще...");
     }
 
